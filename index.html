@@ -1,43 +1,151 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title> Estefany Lemus' Home page  </title>
-        
-        <style>
-        #navbar{
-            background-color:rgb(3, 240, 145);
-        }
-      
-        
-            
-            
-        </style>
-        </head>
-        <body>
+<head>
+  <!-- TODO: Update Title -->
+  <title>Estefany Lemus's Homepage</title>
+  
+  <!-- Include the following stylesheet (controls sytle of navbar and footer) -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  
+  <!-- TODO: Change CSS colors and image so that it matches your desired theme -->
+  <style>
+    body {
+      font-family: Verdana;
+      background-color:#C2C2C2;
+    }
     
-         <div id="navbar">
-            <a href=" "> home </a> <br>
-            <a href=" "> about</a>  <br>
-             <a href=" "> portfolio</a>
-        
+    /* TODO: Make sure the height of your page is big enough */
+    .main {
+      clear: left;
+      min-width: 600px;
+      max-width: 800px;
+      height:650px;
+      margin:0 auto;
+    }
+
+    .main-page{
+      display: block;
+      float:right;
+      background-color:#E0E0E0;
+      height:100%;
+      width:75%;
+      box-sizing:border-box;
+    }
+
+    .sidebar {
+      box-sizing:border-box;
+      padding:10px;
+      float:left;
+      width:25%;
+      height:100%;
+      background-color: #059D8E;
+    }
+
+    .sidebar-nav{
+      margin: 15px 0px;
+      color:#FFFFFF;
+    }
+
+    .sidebar li {
+      margin: 20px 5px 0px;
+    }
+
+    .sidebar ul ul li{
+      margin: 10px 15px 0px;
+      font-size:0.8em;
+    }
+
+    .sidebar ul ul li a{
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+
+    .sidebar ul ul li a:hover{
+      color: #F26101;
+    }
+
+    .image-container {
+      height:300px;
+      width:100%;
+      position: relative;
+      /* TODO: Update the following image */
+      background-image: url("./img/home/south_sister.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 300px;
+    }
+
+    .main-title {
+      margin: 10px 15px;
+      font-size: 30px;
+    }
+
+    .left-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .right-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .sub-title {
+      text-align: center;
+    }
+
+    .text-info {
+      font-size: 0.8em;
+      margin: 20px;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="navigation">
+            <!-- TODO: Ensure that your Navbar is correct -->
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="sidebar">
+            <ul class="sidebar-nav">
+                <!-- TODO: Update the recent projects -->
+                <li><strong>Recent Projects</strong></li>
+                <ul>
+                    <li><a href="./portfolio.html">Shooting Star</a></li>
+                    <li><a href="./portfolio.html">Maze Game</a></li>
+                </ul>
+            </ul>
         </div>
-     
-        <div id="main">
-         
-         <h1> Estefany Lemus </h1>
-       <p>Founding freshmen at Alpha Cindy Avitia High Scool.</p>
-       <img src="https://www.kasandbox.org/programming-images/animals/butterfly_monarch.png"         alt="butterfly" width="350">
+        <div class="main-page">
+            <div class="image-container"></div>
+            
+            <!-- TODO: Update the page title -->
+            <h1 class="main-title">Estefany Lemus's Homepage</h1>
+            <!-- TODO: Update the left-panel and right-panel with info from your 90s website -->
+            <div class="left-panel">
+                <h2 class="sub-title">My Background</h2>
+                  <p class="text-info"> 
+            </div>
+            <div class="right-panel">
+                <h2 class="sub-title">What I Do Now</h2>
+                <p class="text-info">I currently serve as the founding computer science teacher at Alpha Cindy Avitia High School, where I have the joy of working with students from all over East San Jose to discover more about computer science. I also find time to mountain bike, spend time with close friends, and occassionally play some guitar.
+            </div>
 
-         <h3>Where I am from and school</h3>
-        <p> I'm from San Jose, California. I was born and raised in San 
-        Jose with my mom, dad, older sister and yonger brother. My parents are From                 Guatemala, but came to America for better life. I am a student at Alpha;Cindy              Avitia. I went to middle school at Alpha;Blanca Alvardo.
-         </p>
-         <h3>Things I like</h3>
-         <p> I'm into a lot of things.I like anime and cosplaying.I also like listening             to k-pop amd alternative.I love to read homestuck too.One of my favorite things to          is dance.I dance jazz,contemporary and ballet, but my Favorite dance to dance is contemporary.
-         
-         </div>
+            </div>
+        <!-- TODO: Add anything you want to the footer -->
+        <div class="footer">
+        </div>
+    </div>
+    
+    
 
-
-        </body>
-        </html>
+</body>
+</html>
